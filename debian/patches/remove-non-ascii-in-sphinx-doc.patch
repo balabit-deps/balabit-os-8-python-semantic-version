@@ -1,0 +1,73 @@
+Description: Remove non-ascii in doc
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2018-08-28
+
+Index: python-semantic-version/CREDITS
+===================================================================
+--- python-semantic-version.orig/CREDITS
++++ python-semantic-version/CREDITS
+@@ -7,7 +7,7 @@ Maintainers
+ 
+ The ``python-semanticversion`` project is operated and maintained by:
+ 
+-* Raphaël Barrois <raphael.barrois+semver@polytechnique.org> (https://github.com/rbarrois)
++* Raphael Barrois <raphael.barrois+semver@polytechnique.org> (https://github.com/rbarrois)
+ 
+ 
+ .. _contributors:
+Index: python-semantic-version/docs/conf.py
+===================================================================
+--- python-semantic-version.orig/docs/conf.py
++++ python-semantic-version/docs/conf.py
+@@ -199,7 +199,7 @@ latex_elements = {
+ # (source start file, target name, title, author, documentclass [howto/manual]).
+ latex_documents = [
+   ('index', 'python-semanticversion.tex', u'python-semanticversion Documentation',
+-   u'Raphaël Barrois', 'manual'),
++   u'Raphael Barrois', 'manual'),
+ ]
+ 
+ # The name of an image file (relative to this directory) to place at the top of
+@@ -229,7 +229,7 @@ latex_documents = [
+ # (source start file, name, description, authors, manual section).
+ man_pages = [
+     ('index', 'python-semanticversion', u'python-semanticversion Documentation',
+-     [u'Raphaël Barrois'], 1)
++     [u'Raphael Barrois'], 1)
+ ]
+ 
+ # If true, show URL addresses after external links.
+@@ -243,7 +243,7 @@ man_pages = [
+ #  dir menu entry, description, category)
+ texinfo_documents = [
+   ('index', 'python-semanticversion', u'python-semanticversion Documentation',
+-   u'Raphaël Barrois', 'python-semanticversion', 'One line description of project.',
++   u'Raphael Barrois', 'python-semanticversion', 'One line description of project.',
+    'Miscellaneous'),
+ ]
+ 
+Index: python-semantic-version/semantic_version/__init__.py
+===================================================================
+--- python-semantic-version.orig/semantic_version/__init__.py
++++ python-semantic-version/semantic_version/__init__.py
+@@ -6,5 +6,5 @@
+ from .base import compare, match, validate, SimpleSpec, NpmSpec, Spec, SpecItem, Version
+ 
+ 
+-__author__ = "Raphaël Barrois <raphael.barrois+semver@polytechnique.org>"
++__author__ = "Raphael Barrois <raphael.barrois+semver@polytechnique.org>"
+ __version__ = '2.8.2'
+Index: python-semantic-version/setup.py
+===================================================================
+--- python-semantic-version.orig/setup.py
++++ python-semantic-version/setup.py
+@@ -40,7 +40,7 @@ PACKAGE = 'semantic_version'
+ setup(
+     name=PACKAGE,
+     version=get_version(PACKAGE),
+-    author="Raphaël Barrois",
++    author="Raphael Barrois",
+     author_email="raphael.barrois+semver@polytechnique.org",
+     description="A library implementing the 'SemVer' scheme.",
+     long_description=clean_readme('README.rst'),
